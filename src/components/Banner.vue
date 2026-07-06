@@ -4,7 +4,9 @@
             <div class="w-full md:flex justify-between items-center gap-20">
                 <div class="px-5 m-auto mt-20 absolute md:static left-0 top-80">
                     <h class="text-white md:text-3xl text-xl">Welcome 👋</h>
-                    <h1 class="m-auto text-4xl sm:text-6xl lg:text-7xl font-bold w-[250px] md:w-[490px] typing">I'm ON VUTHY</h1>
+                    <div class="w-fit">
+                        <h1 class="m-auto text-4xl sm:text-6xl lg:text-7xl font-bold w-full md:w-[490px] typing">I'm ON VUTHY</h1>
+                    </div>
                     <h1 class="major mb-3 md:text-5xl text-2xl">Web Developer</h1>
                     <p class="text-gray-300 py-5 text-sm">Hi, I'm On Vuthy, a passionate Frontend Developer who enjoys building modern, responsive, and user-friendly websites. I love turning ideas into beautiful digital experiences using HTML, CSS, JavaScript, Vue.js, and React.</p>
                     <div class="flex gap-8">
