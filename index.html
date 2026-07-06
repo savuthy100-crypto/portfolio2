@@ -5,9 +5,32 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>simple_portfolio</title>
+    <style>
+  body{
+      padding-top: 20px;
+      animation-name: bg;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+  }
+  @keyframes bg{
+      0%{
+          background-color: rgb(0, 30, 5);
+      }
+      35%{
+          background-color: rgb(0, 40, 5);
+      }
+      65%{
+          background-color: rgb(0, 60, 5);
+      }
+      100%{
+          background-color: rgb(0, 40, 5);
+      }
+  }
+  </style>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app" class="bg-m"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
