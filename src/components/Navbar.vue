@@ -1,28 +1,35 @@
 <template>
-    <div class="sticky top-0 z-50 container m-auto">
-        <div class="mx-2 bg p-3 border-white border-1 md:rounded-3xl rounded-xl">
+    <div class="cn lg:container md:mx-10 m-auto">
+        <div class="mx-2 bg p-3 border-white border-1 md:rounded-xl rounded-xl">
             <nav class="md:px-10 flex justify-between items-center">
                 <div class="text-amber-700 text-2xl font-bold"><img class="h-8 m-0 p-0" src="../assets/e76caadb-8ed0-4166-baf6-9fb1db66388e-removebg-preview.png" alt="on_vuthy"></div>
                 <ul class="hidden md:flex items-center gap-10">
-                    <li class="font-bold text-white">Home</li>
-                    <li class="font-bold text-white">About Me</li>
-                    <li class="font-bold text-white">Skill</li>
-                    <li class="font-bold text-white">Project</li>
-                    <li class="font-bold text-white">Contact Me</li>
+                    <li class="font-bold text-white">
+                        <a class="hover:text-fuchsia-500 relative pb-1 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full" href="">Home</a>
+                    </li>
+                    <li class="font-bold text-white">
+                        <a class="hover:text-fuchsia-500 relative pb-1 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full" href="">About</a>
+                    </li>
+                    <li class="font-bold text-white">
+                        <a class="hover:text-fuchsia-500 relative pb-1 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full" href="">Skill</a>
+                    </li>
+                    <li class="font-bold text-white">
+                        <a class="hover:text-fuchsia-500 relative pb-1 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full" href="">Contact Me</a>
+                    </li>
                 </ul>
-                <button class="md:hidden text-white text-xl">
+                <button @click="sidebar.toggleSidebar()" class="md:hidden text-white text-xl" >
                     ☰
                 </button>
             </nav>
         </div>
     </div>
-
 </template>
-<script>
+<script setup>
+import { useOpenStore } from '../store/OpenSidebar';
+const sidebar = useOpenStore();
 </script>
-
 <style>
-.container{
+.cn{
     animation: slideDrop 2s ease 1 alternate;
 }
 .bg{ 

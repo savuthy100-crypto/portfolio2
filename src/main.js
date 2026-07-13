@@ -1,6 +1,11 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
-import 'bootstrap-icons/font/bootstrap-icons.css'
+import { createApp } from 'vue';
+import { createPinia } from 'pinia';
+import App from './App.vue';
+import './style.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
-createApp(App).mount('#app');
+const app = createApp(App);
+
+
+app.use(createPinia());   // Install Pinia first
+app.mount('#app');        // Then mount the app
