@@ -40,9 +40,6 @@
                 </div>
             </div>
         </div>
-        <div class="h-screen w-full">
-
-        </div>
     </div>
 </template>
 

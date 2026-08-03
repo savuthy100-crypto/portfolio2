@@ -6,27 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>simple_portfolio</title>
     <style>
-  body{
-      animation-name: bg;
-      animation-duration: 10s;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-  }
-  @keyframes bg{
-      0%{
-          background-color: rgb(0, 30, 5);
-      }
-      35%{
-          background-color: rgb(0, 40, 5);
-      }
-      65%{
-          background-color: rgb(0, 60, 5);
-      }
-      100%{
-          background-color: rgb(0, 40, 5);
-      }
-  }
-  </style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            animation-name: bg;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes bg{
+            0%{
+                background-color: rgb(0, 30, 5);
+            }
+            35%{
+                background-color: rgb(0, 40, 5);
+            }
+            65%{
+                background-color: rgb(0, 60, 5);
+            }
+            100%{
+                background-color: rgb(0, 40, 5);
+            }
+        }
+    </style>
   </head>
   <body>
     <div id="app" class="bg-m"></div>
