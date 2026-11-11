@@ -24,7 +24,7 @@
                         </div>
                     </div>
                     <div class="mt-10">
-                        <a target="_blank" href="../assets/On_vuthy (1).pdf" download class="down hover:bg-blue-600 text-lg font-bold bg-blue-900 text-white border-1 border-white rounded-xl p-3 px-10">
+                        <a target="_blank" href="../assets/On_Vuthy_CV.pdf" download="On_Vuthy_CV.pdf" class="down hover:bg-blue-600 text-lg font-bold bg-blue-900 text-white border-1 border-white rounded-xl p-3 px-10">
                             Download CV
                         </a>
                     </div>
